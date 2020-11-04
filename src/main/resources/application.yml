@@ -1,0 +1,16 @@
+
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/newstudy?characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    prefix: classpath:templelates/
+
+mybatis:
+  type-aliases-package: com/crud/demo/starter/entity
+  mapper-locations: classpath:mapper/*.xml
